@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Productivity Quote</title>
+    <style>
+        body, html {
+          height: 15px;
+            widht:162px;
+          padding:0;
+            margin: 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background-color: clear;
+            font-family: 'Courier New', Courier, monospace; /* Classic computer font */
+            color: #00FF00; /* Green, computer-like text */
+            overflow: hidden;
+        }
+
+        .quote-container {
+            font-size: 19px;
+            color: #0000ff;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00FF00;
+            width: 100%;
+            animation: typing 2s steps(50, end) forwards, blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #00FF00; }
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        "Quick Actions"
+    </div>
+</body>
+</html>
